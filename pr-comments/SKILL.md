@@ -11,9 +11,9 @@ Work through the supplied findings only. Check each reproduction against the cur
 
 Return one draft per root cause, most consequential first. Put the exact `path/to/file:line` above each comment. Anchor it to the changed line responsible for the failure. For a deletion, identify the base-side line. Write three lines, one sentence each. Use these lengths as a guide:
 
-1. **Issue** (about 5–12 words). Say what breaks for the person using it.
-2. **Example** (about 10–25 words). Start with “e.g.” and give the trigger and observed result.
-3. **Ask** (about 5–15 words). Ask for one change in behavior. Leave the implementation to the author.
+1. **Issue** (about 5–15 words). Say what breaks for the person using it.
+2. **Example** (about 10–30 words). Start with “e.g.” and give the trigger and observed result.
+3. **Ask** (about 5–20 words). Ask for one change in behavior. Leave the implementation to the author.
 
 Example draft:
 
