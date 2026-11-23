@@ -21,7 +21,7 @@ Example draft:
 >
 > Saving an existing draft clears its title.
 >
-> After I changed one word in the body and saved the draft, I reopened it and found the title blank.
+> e.g. after I changed one word in the body and saved the draft, I reopened it and found the title blank.
 >
 > Can we keep the saved title when only the body changes?
 
