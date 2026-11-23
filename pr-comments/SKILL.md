@@ -12,7 +12,7 @@ For each finding, verify the trigger on the current head with a focused test or 
 Return one draft per root cause, most consequential first. Put the exact `path/to/file:line` above each comment. Anchor it to the changed line responsible for the failure. For a deletion, identify the base-side line. Write three short paragraphs in a plain teammate voice:
 
 1. Say what breaks for the person using it.
-2. Give one sentence with the steps and the result you observed.
+2. Start with “e.g.” and give one sentence with the steps and the result you observed.
 3. Ask for the behavior that would fix it. Leave room for the author to choose the implementation.
 
 Example draft:
