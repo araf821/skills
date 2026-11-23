@@ -1,6 +1,6 @@
 ---
 name: pr-comments
-description: Review a pull request or turn verified findings into short, line-specific PR comments. Draft in chat by default and submit a GitHub review when asked to leave comments.
+description: Review a PR or take a bug someone has reproduced and write a short comment for the line that caused it. Draft in chat and post when asked.
 ---
 
 # PR comments

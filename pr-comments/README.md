@@ -1,11 +1,11 @@
 # PR comments
 
-Use this when you want feedback you can leave on a specific line of a pull request. Give it a PR to review or findings you've already reproduced, including findings from [adversarial-review](../adversarial-review/).
+Use this when you want comments you can leave on a PR. Give it the PR itself or a bug you've already reproduced with [adversarial-review](../adversarial-review/).
 
 ```text
-Use $pr-comments on PR #42 and draft the comments.
+Use $pr-comments on PR #42. Draft the comments here.
 ```
 
-By default, you get drafts in chat. Each starts with the exact file and line, followed by three short paragraphs covering what breaks, how to reproduce it, and the change you're asking for.
+Each comment comes back in chat with the file and line it belongs on. The author gets three things in a few sentences: what broke, what someone did to make it happen, and what you're asking them to change.
 
-When you're ready to post, say `Leave the comments on PR #42`. The skill checks the current diff and existing threads, posts new findings together, and requests changes if a verified issue should block the merge.
+Say `Leave the comments on PR #42` to post them. It checks the latest code, skips issues already covered in a thread, and requests changes if something needs fixing before merge.

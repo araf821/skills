@@ -1,6 +1,6 @@
 ---
 name: adversarial-review
-description: Review a PR, branch, commit, or local diff for consequential bugs. Trace real callers, challenge suspected failures, and report only issues you can reproduce.
+description: Check what a PR, branch, commit, or local change might break. Flag a bug only after you can make it happen and show why it matters.
 ---
 
 # Adversarial review

@@ -1,11 +1,11 @@
 # Adversarial review
 
-Use this when you want to find consequential bugs in a PR, branch, commit, or local diff. It's a good fit when a change touches saved data, retries, or behavior that several callers rely on.
+Use this when you want a second pair of eyes on what a PR might break. Say a PR changes how drafts are saved. I'd want to know if I can still open a draft I wrote yesterday, edit it, and get my changes back when I refresh.
 
 ```text
-Use $adversarial-review on my local changes. Check whether existing drafts still open after the migration.
+Use $adversarial-review on this PR. Try editing a draft saved before the migration.
 ```
 
-Each finding includes the exact file and line, what broke, how to reproduce it, and what needs to change. The reviewer skips low-risk issues and very rare edge cases. If a blocked check leaves a flow untested, the review says which one.
+You can give it a branch, a commit, or your local changes too. It only flags a bug if it can make it happen in a scenario people would reasonably run into. You get the line that caused it, the steps to see it yourself, and what needs fixing. Small stuff and very rare edge cases get skipped.
 
-To turn the findings into inline review comments, pair it with [pr-comments](../pr-comments/).
+Use [pr-comments](../pr-comments/) if you want those findings written up for the PR.
