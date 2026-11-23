@@ -1,11 +1,15 @@
 # PR comments
 
-Use this when you want comments you can leave on a PR. Give it the PR itself or a bug you've already reproduced with [adversarial-review](../adversarial-review/).
+Run a code review first. Then give this skill the findings you want written up as PR comments. It can use findings already in the chat, a pasted list, or a linked report from another agent or review skill, including [adversarial-review](../adversarial-review/).
 
 ```text
-Use $pr-comments on PR #42. Draft the comments here.
+Use $pr-comments to turn the findings above into draft comments for PR #42.
 ```
 
-Each comment comes back in chat with the file and line it belongs on. The author gets three things in a few sentences: what broke, what someone did to make it happen, and what you're asking them to change.
+Each draft gives the exact file and line, then three sentences:
 
-Say `Leave the comments on PR #42` to post them. It checks the latest code, skips issues already covered in a thread, and requests changes if something needs fixing before merge.
+- **Issue** (about 5–12 words). What broke?
+- **Example** (about 10–25 words). Start with “e.g.” and say what happened when someone tried it.
+- **Ask** (about 5–15 words). What should change?
+
+Drafts stay in chat. Say `Leave the comments on PR #42` to post them. The skill checks the latest code, skips issues already covered in a thread, and requests changes if something needs fixing before merge.

@@ -1,19 +1,19 @@
 ---
 name: pr-comments
-description: Review a PR or take a bug someone has reproduced and write a short comment for the line that caused it. Draft in chat and post when asked.
+description: Turn findings from a completed code review into short, line-specific PR comments. Requires existing findings. Draft in chat and post when asked.
 ---
 
 # PR comments
 
-Read the PR for intent. What problem does it solve? Does the whole flow work? Is the new code needed? Which existing callers depend on the behavior it changes?
+Start with findings from an earlier review. Use the review already in the conversation, a linked report, or findings the user pastes. If all you have is a PR link, ask for the review findings and stop. If the review found nothing, say there are no comments to draft.
 
-For each finding, verify the trigger on the current head with a focused test or a run through the affected flow. If someone supplied a reproduction, check its revision, steps and observed result. Credit whoever ran it. Skip low-risk issues, very rare edge cases and anything you couldn't verify.
+Work through the supplied findings only. Check each reproduction against the current PR head. Re-run the relevant steps if the code changed or the evidence is incomplete. Credit whoever ran the check. Skip low-risk issues, very rare edge cases and anything you couldn't verify.
 
-Return one draft per root cause, most consequential first. Put the exact `path/to/file:line` above each comment. Anchor it to the changed line responsible for the failure. For a deletion, identify the base-side line. Write three short paragraphs in a plain teammate voice:
+Return one draft per root cause, most consequential first. Put the exact `path/to/file:line` above each comment. Anchor it to the changed line responsible for the failure. For a deletion, identify the base-side line. Write three lines, one sentence each. Use these lengths as a guide:
 
-1. Say what breaks for the person using it.
-2. Start with “e.g.” and give one sentence with the steps and the result you observed.
-3. Ask for the behavior that would fix it. Leave room for the author to choose the implementation.
+1. **Issue** (about 5–12 words). Say what breaks for the person using it.
+2. **Example** (about 10–25 words). Start with “e.g.” and give the trigger and observed result.
+3. **Ask** (about 5–15 words). Ask for one change in behavior. Leave the implementation to the author.
 
 Example draft:
 
